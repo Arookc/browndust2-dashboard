@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD2 Hub - Brown Dust 2 Resource Center</title>
+    <meta name="description" content="Brown Dust 2 permanent resource hub - Characters, guides, banners, and community tools">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header with improved branding -->
+        <header class="header">
+            <div class="header__content">
+                <div class="header__branding">
+                    <h1>🛡️ BD2 Hub</h1>
+                    <p class="subtitle">Brown Dust 2 Resource Center</p>
+                    <div class="permanent-link-info">
+                        <span class="permanent-badge">✓ Permanent Link</span>
+                        <span class="share-text">Share this link with friends!</span>
+                    </div>
+                </div>
+                <div class="header__actions">
+                    <button class="btn btn--primary btn--share" id="shareBtn">
+                        📤 Share BD2 Hub
+                    </button>
+                    <button class="btn btn--secondary btn--sm copy-link-btn" id="copyLinkBtn">
+                        📋 Copy Link
+                    </button>
+                </div>
+            </div>
+            <div class="header__info">
+                <span class="url-display">bd2hub.com (bookmark this!)</span>
+                <span class="last-updated">Last Updated: <span id="currentDate"></span></span>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs">
+            <button class="nav-tab active" data-tab="dashboard">🏠 Dashboard</button>
+            <button class="nav-tab" data-tab="characters">⚔️ Characters</button>
+            <button class="nav-tab" data-tab="banners">🎭 Banners</button>
+            <button class="nav-tab" data-tab="guides">📚 Guides</button>
+            <button class="nav-tab" data-tab="anniversary">🎉 Anniversary</button>
+        </nav>
+
+        <!-- Quick Share Section -->
+        <div class="quick-share-section">
+            <div class="share-info">
+                <h3>📤 Share BD2 Hub</h3>
+                <p>This permanent link contains all Brown Dust 2 resources in one place</p>
+                <div class="share-buttons">
+                    <button class="share-btn" data-method="copy">📋 Copy Link</button>
+                    <button class="share-btn" data-method="discord">💬 Share on Discord</button>
+                    <button class="share-btn" data-method="reddit">🔗 Share on Reddit</button>
+                </div>
+            </div>
+            <div class="permanent-features">
+                <div class="feature-item">✓ Always up-to-date</div>
+                <div class="feature-item">✓ Permanent bookmark</div>
+                <div class="feature-item">✓ All BD2 resources</div>
+                <div class="feature-item">✓ Mobile friendly</div>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-section">
+            <input type="text" id="searchInput" class="search-input" placeholder="🔍 Search BD2 characters, guides, or content… (Ctrl+K)">
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- DASHBOARD TAB -->
+            <div class="tab-content active" id="dashboard">
+                <!-- Primary Resources / Quick Links -->
+                <section class="quick-links">
+                    <h2>🎯 Primary BD2 Resources</h2>
+                    <div class="links-grid">
+                        <div class="link-card bd2-primary">
+                            <div class="link-icon">👗</div>
+                            <h3>BD2 Costumes</h3>
+                            <p>Complete Brown Dust 2 costume guides and banner information</p>
+                            <span class="link-type">Costumes & Banners</span>
+                            <a href="https://dotgg.gg/brown-dust-2/costumes/" target="_blank" class="link-button">Visit Guide</a>
+                        </div>
+                        <div class="link-card bd2-primary">
+                            <div class="link-icon">📊</div>
+                            <h3>BD2 Community Data</h3>
+                            <p>Community-maintained Brown Dust 2 data and banner schedules</p>
+                            <span class="link-type">Community Data</span>
+                            <a href="https://docs.google.com/spreadsheets/d/1ePZc0xGtZwoJFbQ2EXJmHdaIlx2Uro_5-suCEohihhU/preview#gid=1180436140" target="_blank" class="link-button">Open Spreadsheet</a>
+                        </div>
+                        <div class="link-card bd2-primary">
+                            <div class="link-icon">⚔️</div>
+                            <h3>BD2 Character Guides</h3>
+                            <p>Detailed Brown Dust 2 character guides and strategies</p>
+                            <span class="link-type">Character Information</span>
+                            <a href="https://dotgg.gg/brown-dust-2/character-guides/" target="_blank" class="link-button">Browse Guides</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CURRENT BANNERS SECTION -->
+                <section class="current-banners">
+                    <h2>🎭 Current BD2 Banners</h2>
+                    <div class="banners-grid">
+                        <!-- Active banners -->
+                        <div class="banner-card" data-end-date="2025-07-17">
+                            <div class="banner-status active">Active</div>
+                            <h3>Justia</h3>
+                            <p>Character Banner</p>
+                            <span class="banner-duration">Jun 19 – Jul 17, 2025</span>
+                            <span class="banner-remaining"></span>
+                        </div>
+                        <div class="banner-card" data-end-date="2025-07-17">
+                            <div class="banner-status active">Active</div>
+                            <h3>Teresse</h3>
+                            <p>Character Banner</p>
+                            <span class="banner-duration">Jun 19 – Jul 17, 2025</span>
+                            <span class="banner-remaining"></span>
+                        </div>
+                        <div class="banner-card" data-end-date="2025-07-09">
+                            <div class="banner-status expired">Expired</div>
+                            <h3>Refithea</h3>
+                            <p>Character Banner</p>
+                            <span class="banner-duration">Jun 26 – Jul 9, 2025</span>
+                        </div>
+                        <div class="banner-card" data-end-date="2025-07-17">
+                            <div class="banner-status active">Active</div>
+                            <h3>Zenith</h3>
+                            <p>Character Banner</p>
+                            <span class="banner-duration">Jul 3 – Jul 17, 2025</span>
+                            <span class="banner-remaining"></span>
+                        </div>
+                        <div class="banner-card" data-end-date="2025-07-24">
+                            <div class="banner-status active">Active</div>
+                            <h3>Eclipse</h3>
+                            <p>Character Banner</p>
+                            <span class="banner-duration">Jul 10 – Jul 24, 2025</span>
+                            <span class="banner-remaining"></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- QUICK TIPS -->
+                <section class="quick-tips">
+                    <h2>💡 BD2 Quick Tips</h2>
+                    <div class="tips-list">
+                        <div class="tip-item">🌊 Current summer-themed events are active through July 2025</div>
+                        <div class="tip-item">🎉 2nd Anniversary offers over 1,000 free draws</div>
+                        <div class="tip-item">📖 Story Pack 18: Salvation is the final chapter of Season 3</div>
+                        <div class="tip-item">✨ New animated skill cut-scenes added based on player feedback</div>
+                        <div class="tip-item">🏖️ Beach & pool-party themed costumes dominate current banners</div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- CHARACTERS TAB -->
+            <div class="tab-content" id="characters">
+                <!-- Character Tier List -->
+                <section class="tier-list">
+                    <h2>🏆 BD2 Character Tier Lists</h2>
+                    <!-- S Tier -->
+                    <div class="tier-section">
+                        <button class="tier-toggle" data-tier="s">
+                            <span class="tier-label s-tier">S Tier</span>
+                            <span class="tier-count">19 characters</span>
+                        </button>
+                        <div class="tier-content" id="s-tier">
+                            <div class="character-grid">
+                                <div class="character-item">Morpeah</div>
+                                <div class="character-item">Apostle Blade</div>
+                                <div class="character-item">Nebris</div>
+                                <div class="character-item">Beachside Justice Michaela</div>
+                                <div class="character-item">Venaka</div>
+                                <div class="character-item">Sylvia</div>
+                                <div class="character-item">Liatris</div>
+                                <div class="character-item">Levia</div>
+                                <div class="character-item">Loen</div>
+                                <div class="character-item">Yuri</div>
+                                <div class="character-item">Samay</div>
+                                <div class="character-item">Dark Saintess Liberta</div>
+                                <div class="character-item">Sentana</div>
+                                <div class="character-item">Eclipse</div>
+                                <div class="character-item">Young Lady Blade</div>
+                                <div class="character-item">Luvencia</div>
+                                <div class="character-item">Kry</div>
+                                <div class="character-item">Acting Archbishop Michaela</div>
+                                <div class="character-item">Earth Mother Believer Priestess</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- A Tier -->
+                    <div class="tier-section">
+                        <button class="tier-toggle" data-tier="a">
+                            <span class="tier-label a-tier">A Tier</span>
+                            <span class="tier-count">18 characters</span>
+                        </button>
+                        <div class="tier-content" id="a-tier">
+                            <div class="character-grid">
+                                <div class="character-item">Schera</div>
+                                <div class="character-item">Rafina</div>
+                                <div class="character-item">New Hire Seir</div>
+                                <div class="character-item">Wiggle</div>
+                                <div class="character-item">Dalvi</div>
+                                <div class="character-item">Yumi</div>
+                                <div class="character-item">Roxy</div>
+                                <div class="character-item">Rubia</div>
+                                <div class="character-item">Elise</div>
+                                <div class="character-item">Anastasia</div>
+                                <div class="character-item">Eris</div>
+                                <div class="character-item">Gray</div>
+                                <div class="character-item">Michaela</div>
+                                <div class="character-item">Labyrinth Gatekeeper Nebris</div>
+                                <div class="character-item">Angelica</div>
+                                <div class="character-item">Hikage</div>
+                                <div class="character-item">Elaneer</div>
+                                <div class="character-item">Rou</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Collaboration Units -->
+                <section class="collaboration-units">
+                    <h2>🤝 BD2 Collaboration Units</h2>
+                    <div class="collab-grid">
+                        <div class="collab-section">
+                            <h3>Goblin Slayer</h3>
+                            <div class="collab-characters">
+                                <div class="character-item">Goblin Slayer</div>
+                                <div class="character-item">High Elf Archer</div>
+                                <div class="character-item">Priestess</div>
+                                <div class="character-item">Sword Maiden</div>
+                            </div>
+                        </div>
+                        <div class="collab-section">
+                            <h3>Mushoku Tensei</h3>
+                            <div class="collab-characters">
+                                <div class="character-item">Eris</div>
+                                <div class="character-item">Roxy</div>
+                            </div>
+                        </div>
+                        <div class="collab-section">
+                            <h3>Senran Kagura</h3>
+                            <div class="collab-characters">
+                                <div class="character-item">Hikage</div>
+                                <div class="character-item">Yomi</div>
+                                <div class="character-item">Yozakura</div>
+                                <div class="character-item">Yumi</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- BANNERS TAB -->
+            <div class="tab-content" id="banners">
+                <section class="banner-details">
+                    <h2>🎭 Active BD2 Banners</h2>
+                    <div class="banner-list">
+                        <div class="banner-detail-card" data-end-date="2025-07-17">
+                            <h3>Justia</h3>
+                            <div class="banner-info">
+                                <span class="banner-type">Character Banner</span>
+                                <span class="banner-duration">Jun 19 – Jul 17, 2025</span>
+                                <span class="banner-status active">Active</span>
+                                <span class="banner-remaining"></span>
+                            </div>
+                        </div>
+                        <div class="banner-detail-card" data-end-date="2025-07-17">
+                            <h3>Teresse</h3>
+                            <div class="banner-info">
+                                <span class="banner-type">Character Banner</span>
+                                <span class="banner-duration">Jun 19 – Jul 17, 2025</span>
+                                <span class="banner-status active">Active</span>
+                                <span class="banner-remaining"></span>
+                            </div>
+                        </div>
+                        <div class="banner-detail-card" data-end-date="2025-07-09">
+                            <h3>Refithea</h3>
+                            <div class="banner-info">
+                                <span class="banner-type">Character Banner</span>
+                                <span class="banner-duration">Jun 26 – Jul 9, 2025</span>
+                                <span class="banner-status expired">Expired</span>
+                            </div>
+                        </div>
+                        <div class="banner-detail-card" data-end-date="2025-07-17">
+                            <h3>Zenith</h3>
+                            <div class="banner-info">
+                                <span class="banner-type">Character Banner</span>
+                                <span class="banner-duration">Jul 3 – Jul 17, 2025</span>
+                                <span class="banner-status active">Active</span>
+                                <span class="banner-remaining"></span>
+                            </div>
+                        </div>
+                        <div class="banner-detail-card" data-end-date="2025-07-24">
+                            <h3>Eclipse</h3>
+                            <div class="banner-info">
+                                <span class="banner-type">Character Banner</span>
+                                <span class="banner-duration">Jul 10 – Jul 24, 2025</span>
+                                <span class="banner-status active">Active</span>
+                                <span class="banner-remaining"></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- GUIDES TAB -->
+            <div class="tab-content" id="guides">
+                <section class="costume-guides">
+                    <h2>📚 Recent BD2 Costume Guides</h2>
+                    <div class="guides-grid">
+                        <div class="guide-card">
+                            <h3>Beach Vacation Eclipse</h3>
+                            <div class="guide-info">
+                                <span class="guide-type rerun">Rerun</span>
+                                <span class="guide-author">By Rex</span>
+                                <span class="guide-date">July 9, 2025</span>
+                            </div>
+                        </div>
+                        <div class="guide-card">
+                            <h3>Poolside Guardian Zenith</h3>
+                            <div class="guide-info">
+                                <span class="guide-type new">New</span>
+                                <span class="guide-author">By Rex</span>
+                                <span class="guide-date">July 9, 2025</span>
+                            </div>
+                        </div>
+                        <div class="guide-card">
+                            <h3>Poolside Fairy Refithea</h3>
+                            <div class="guide-info">
+                                <span class="guide-type new">New</span>
+                                <span class="guide-author">By Rex</span>
+                                <span class="guide-date">June 30, 2025</span>
+                            </div>
+                        </div>
+                        <div class="guide-card">
+                            <h3>Pool Party Justia</h3>
+                            <div class="guide-info">
+                                <span class="guide-type limited">Limited Rerun</span>
+                                <span class="guide-author">By Rex</span>
+                                <span class="guide-date">June 20, 2025</span>
+                            </div>
+                        </div>
+                        <div class="guide-card">
+                            <h3>Water Park Queen Wilhelmina</h3>
+                            <div class="guide-info">
+                                <span class="guide-type new">New</span>
+                                <span class="guide-author">By Rex</span>
+                                <span class="guide-date">June 20, 2025</span>
+                            </div>
+                        </div>
+                        <div class="guide-card">
+                            <h3>Beachside Angel Teresse</h3>
+                            <div class="guide-info">
+                                <span class="guide-type limited">Limited Rerun</span>
+                                <span class="guide-author">By Rex</span>
+                                <span class="guide-date">June 20, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="additional-resources">
+                    <h2>🔗 Additional BD2 Resources</h2>
+                    <div class="resources-grid">
+                        <a href="https://dotgg.gg/brown-dust-2/beginners-quick-start-guide/" target="_blank" class="resource-card">
+                            <h3>BD2 Beginner's Guide</h3>
+                            <p>Quick start guide for new Brown Dust 2 players</p>
+                        </a>
+                        <a href="https://dotgg.gg/brown-dust-2/reroll-guide/" target="_blank" class="resource-card">
+                            <h3>BD2 Reroll Guide</h3>
+                            <p>Character reroll recommendations for Brown Dust 2</p>
+                        </a>
+                        <a href="https://dotgg.gg/brown-dust-2/resources-and-currency-guide/" target="_blank" class="resource-card">
+                            <h3>BD2 Resources & Currency</h3>
+                            <p>Complete guide to Brown Dust 2 game resources</p>
+                        </a>
+                        <a href="http://cymmina.gamependium.com/browndust2/banners.html" target="_blank" class="resource-card">
+                            <h3>BD2 Banner Recommendations</h3>
+                            <p>Which Brown Dust 2 banners to pull on</p>
+                        </a>
+                        <a href="https://www.pockettactics.com/brown-dust-2/tier-list" target="_blank" class="resource-card">
+                            <h3>BD2 Tier List (External)</h3>
+                            <p>External Brown Dust 2 tier ranking</p>
+                        </a>
+                        <a href="https://metatierlist.com/brown-dust-2-tier-list/" target="_blank" class="resource-card">
+                            <h3>BD2 Meta Tier List</h3>
+                            <p>Meta-driven Brown Dust 2 rankings</p>
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <!-- ANNIVERSARY TAB -->
+            <div class="tab-content" id="anniversary">
+                <section class="anniversary-info">
+                    <h2>🎉 BD2 2nd Anniversary – Splash Queen</h2>
+                    <div class="anniversary-details">
+                        <div class="anniversary-duration">
+                            <h3>Event Duration</h3>
+                            <p>June 2025 – July 2025</p>
+                        </div>
+                        <div class="anniversary-features">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Over 1,000 draw opportunities across 100 days</li>
+                                <li>Dream Bride Eclipse full upgrade event (free)</li>
+                                <li>New summer-themed costumes</li>
+                                <li>Story Pack 18: Salvation (final chapter of Season 3)</li>
+                                <li>Offline events in major cities worldwide</li>
+                            </ul>
+                        </div>
+                        <div class="anniversary-rewards">
+                            <h3>Special Rewards</h3>
+                            <ul>
+                                <li>30 Selective Draw Tickets</li>
+                                <li>15 Regular Draw Tickets</li>
+                                <li>Dream Bride Eclipse costume (fully upgraded)</li>
+                                <li>Various seasonal rewards</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
